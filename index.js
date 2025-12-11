@@ -1,5 +1,5 @@
 // 1: selecteer de button
-let likeButton = document.querySelector('button')
+const likeButton = document.querySelector('button')
  
 // 2: wacht op een klik
 likeButton.addEventListener('click', function() {
