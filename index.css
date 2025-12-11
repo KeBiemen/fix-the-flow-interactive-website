@@ -2,19 +2,79 @@
 html{
   font-family: Arial, Helvetica, sans-serif;
   background-color:hsl(201, 60%, 25%) ;
+
 }
+
+ body {
+  font-family: Helvetica;
+  margin: 0%;
+  padding: 0%;
+
+  @media (min-width: 400px) {
+ 
+    article {
+      width: 25em;
+    }}
+  
+
+  @media (min-width: 766px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+    }
+
+    h2 {
+      grid-column: 1 / -1;
+    }
+    article {
+      width: 25em;
+    }
+
+
+  @media (min-width: 1000px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+    }
+
+    h2 {
+      grid-column: 1 / -1;
+    }
+    article {
+      width: 30em;
+    }
+
+  
+
+    @media (min-width: 1400px) {
+      section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+      }
+
+      article {
+        width: 28em;
+      }
+
+ 
+    }
+  }
+}  }    
 
 
 header {
   background-color:hsl(34, 48%, 84%) ;
   height: 70px;
   margin: 0%;
-
   }
 
   .logo {
     height: 21px;
     padding: 1em;
+    fill: black;
 
     @media (min-width: 620px) {
       height: 32px;
@@ -29,14 +89,16 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-
   text-align: center;
 }
 
+
+h2{
+  color: hsl(34, 48%, 84%) ;
+}
 article {
   margin-top:1em;
-  width:22em;
- height:30em;
+  height: 38em;
   display:grid;
   grid-template-columns: 1fr 2fr;
    grid-template-rows: repeat(6, 1fr);
@@ -46,34 +108,34 @@ article {
 }
 
 img { 
-
+  grid-area: img;
+  width: 5em;
+  height: 36em;
   border-radius:2em;
   padding:1em;
-  height:28em;
-  width: 6.5em;
   object-fit: cover;
-  grid-row: 1 / -1;}
+}
 
 
 h3 {
-    grid-row-start: 1;
-  font-size:20px;
-  margin-top:14px;
+    grid-area: h3;
+  font-size:23px;
+  margin-top:20px;
   padding-left:.5em;
  margin-bottom:0;
 }
 
  ul {
-   grid-row: 2 ;
+    grid-area: ul;
     display: flex;
-    flex-direction: row;
-    gap: 8px;
+    gap: 10px;
     list-style: none;
     flex-wrap: wrap;
    padding:0 1em;
 }
 
 li {
+  height: 14px;
   font-size:14px;
   background-color: hsl(201, 60%, 25%);
   color:hsl(34, 48%, 84%);
@@ -83,26 +145,27 @@ li {
 }
 
 p {
-  grid-row-start: 3;
-  grid-row-end: 5;
   font-size:16px;
   line-height:1.5;
   border-top: solid 2px hsl(201, 60%, 25%);
  margin:1em;
- padding-top:.5em;
+ padding-top:1em;
+ height: 12em;
+ width: 13em;
+overflow: scroll;
+  
 }
 
 div{
-grid-row-start: 6;
+    grid-area: div;
   padding:1em;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  display:flex;
   gap:.5em;
 }
 
 
 .leesmeer {
+ 
   background-color:hsl(34, 48%, 84%);
    padding:16px;
   height:10px;
@@ -125,7 +188,7 @@ button {
 }
 
 
-.buttonsLike{
+svg{
 fill:hsla(201, 60%, 25%, .6 );
 
 }
@@ -142,7 +205,7 @@ fill:hsla(201, 60%, 25%, .6 );
 	}
 }
 
-.buttonsLike.liked{
+svg.liked{
   animation-name:--like-it-animation;
 	animation-duration:.5s;
 	animation-iteration-count:2;

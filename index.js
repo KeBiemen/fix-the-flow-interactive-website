@@ -1,10 +1,10 @@
 // 1: selecteer de button
-let Likebutton = document.querySelector('button')
+let likebutton = document.querySelector('button')
  
 // 2: wacht op een klik
-Likebutton.addEventListener('click', function() {
-
+likebutton.addEventListener('click', function() {
+  // Even checken of dit werkt..
   
   // 3: maak de sectie geel, door een class toe te voegen aan die sectie..  
-  document.querySelector('.buttonsLike').classList.toggle('liked')
+  document.querySelector('.hart').classList.toggle('liked')
 })
