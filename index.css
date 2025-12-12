@@ -103,7 +103,7 @@ margin-left:5%;
 }
 article {
   margin-top:1em;
-  height: 38em;
+  height: 40em;
   display:grid;
   grid-template-columns: 1fr 2fr;
    grid-template-rows: 1fr 1fr 2fr 1fr;
