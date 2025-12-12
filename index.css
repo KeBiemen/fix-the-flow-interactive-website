@@ -198,11 +198,13 @@ button {
   width:40px;
 }
 
+svg {
+  fill:hsla(201, 60%, 25%, .6 );
+    cursor: pointer;
 
-svg{
-fill:hsla(201, 60%, 25%, .6 );
 
 }
+
 
  @keyframes --like-it-animation {
   0% {
@@ -216,7 +218,7 @@ fill:hsla(201, 60%, 25%, .6 );
 	}
 }
 
-svg.liked{
+.liked svg{
   animation-name:--like-it-animation;
 	animation-duration:.5s;
 	animation-iteration-count:2;
