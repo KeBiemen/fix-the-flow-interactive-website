@@ -342,53 +342,58 @@ div {
 }
 
 .leesmeer {
- 
-  background-color:hsl(34, 48%, 84%);
-   padding:16px;
-  height:10px;
-  width:5em;
-   border-radius:.4em;
-  font-weight:bold;
+  background-color: hsl(34, 48%, 84%);
+  padding: 16px;
+  height: 10px;
+  width: 5em;
+  border-radius: 0.4em;
+  font-weight: bold;
   text-decoration: none;
-  color:hsl(201, 60%, 25%);
+  color: hsl(201, 60%, 25%);
+    &:hover {
+    cursor: pointer;
+   text-decoration: underline;
+   
+  }
 }
 
 button {
-    display:flex;
-  align-items:center;
-  justify-content:center;
-   background-color:hsl(34, 48%, 84%);
-   border-radius:.2em;
-  border:none;
- height:40px; 
-  width:40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(34, 48%, 84%);
+  border-radius: 0.2em;
+  border: none;
+  height: 40px;
+  width: 40px;
 }
 
 svg {
-  fill:hsla(201, 60%, 25%, .6 );
-    cursor: pointer;
-
-
+  fill: hsla(201, 60%, 25%, 0.6);
+  cursor: pointer;
+   transition: 1s;
+    &:hover {
+     transform: translate3d(0, 0.3em, 0);
+    transition: 2s;}
 }
 
-
- @keyframes --like-it-animation {
+@keyframes --like-it-animation {
   0% {
-    scale:1;
+    scale: 1;
   }
-	50% {
-		scale:1.7;
-	}
-	100% {
-		scale:1.2;
-	}
+  50% {
+    scale: 1.7;
+  }
+  100% {
+    scale: 1.2;
+  }
 }
 
-.liked svg{
-  animation-name:--like-it-animation;
-	animation-duration:.5s;
-	animation-iteration-count:2;
-	animation-fill-mode:forwards;
-	fill:hsl(201, 60%, 25%);
-  stroke:hsl(201, 60%, 25%);
-  }
+.liked svg {
+  animation-name: --like-it-animation;
+  animation-duration: 0.5s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+  fill: hsl(201, 60%, 25%);
+  stroke: hsl(201, 60%, 25%);
+}
