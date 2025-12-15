@@ -6,7 +6,6 @@ html{
   Background-size:contain;
   background-repeat: no-repeat;
   background-position: fixed;
-
 }
 
  body {
@@ -24,7 +23,6 @@ html{
       grid-template-columns: 1fr 1fr;
       gap: 1em;
     }
-
     h2 {
       grid-column: 1 / -1;
     }
@@ -65,21 +63,22 @@ html{
 
 
 header {
-  background-color:hsl(34, 48%, 84%) ;
+  background-color: hsl(34, 48%, 84%);
   height: 70px;
   margin: 0%;
-  }
+}
 
-  .logo {
-    height: 21px;
-    padding: 1em;
-    fill: black;
+.logo {
+  height: 21px;
+  padding: 1em;
+  fill: black;
 
     @media (min-width: 620px) {
       height: 32px;
       max-width: 660px;
     }
   }
+}
 
   h1 {
   font-size: 3em;
@@ -91,15 +90,109 @@ header {
   text-align: center;
 }
 
-
-h2{
-  color: hsl(34, 48%, 84%) ;
+.sorteer {
+  padding-bottom: 0%;
+  color: hsl(34, 48%, 84%);
+  height: 1.5em;
+}
+form {
+  margin-left: 4%;
+  margin-right: 4%;
+  
 }
 
-section{
-align-items: center;
-margin-left:5%;
+details {
+  display: inline-table;
+  background-color: hsl(34, 48%, 84%);
+  border-radius: 2px;
+  padding: 0.5em 0.5em 0;
+  margin-right: 3%;
+  width: fit-content;
+  box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.315);
+  align-self: center;
+  margin-bottom: 5%;
+  color: black;
+  width: 10em;
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+    transform: translate3d(0, 0.3em, 0);
+    transition: 1s;
+  }
+}
 
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  background-color: hsl(34, 48%, 84%);
+  width: inherit;
+  box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.315);
+  align-self: center;
+  width: 10.5em;
+  margin-left: -1em;
+  padding: 4px;
+  margin-top: 4px;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+details[open]::details-content {
+  border-radius: 4em;
+  padding: 0.5em 0.5em 0.5em;
+}
+
+input {
+  display: block;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+label {
+  background-color: hsla(168, 38%, 67%, 0.795);
+  display: flex;
+  padding: 0.5em;
+  margin: .1em;
+  box-shadow: 1px;
+
+
+  /*  als je over de label hover dan krijgt het een grijze kleur  */
+  &:hover {
+    background-color: hsla(201, 60%, 25%, 0.6);
+    color: white;
+  }
+  /*  als de label ingeklikt wordt dan krijgt het een ander kleur  */
+  &:active {
+    background-color: black;
+  }
+}
+
+/* als de filter aangevinkt is, dan krijgt hij een ander kleur */
+input[type="radio"]:checked + label {
+  border-color: black;
+  background-color: hsla(201, 60%, 25%);
+  color: #ffffff;
+}
+
+h2 {
+  color: hsl(34, 48%, 84%);
+  font-size: 40px;
+}
+
+section {
+  align-items: center;
+  margin-left: 5%;
 }
 article {
   margin-top:1em;
@@ -173,7 +266,6 @@ div{
   display:flex;
   gap:.5em;
 }
-
 
 .leesmeer {
  
