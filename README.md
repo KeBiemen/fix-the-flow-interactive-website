@@ -36,7 +36,9 @@ lees-meer-knop --> <img width="225" height="100" alt="afbeelding" src="https://g
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
-(https://kebiemen.github.io/fix-the-flow-interactive-website/)
+<img width="1691" height="790" alt="afbeelding" src="https://github.com/user-attachments/assets/8c98e2d6-ea36-4328-bf82-25dda632cfdb" />
+
+https://kebiemen.github.io/fix-the-flow-interactive-website/
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
