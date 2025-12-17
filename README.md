@@ -26,13 +26,11 @@ onderin het kaarjes zie je een lees-meer-knop en een like-knop
 
 <img width="225" height="375" alt="afbeelding" src="https://github.com/user-attachments/assets/803d8f78-33f8-4821-8b2d-64600c87e865" />
 
-like-knop
+like-knop --> <img width="200" height="200" alt="afbeelding" src="https://github.com/user-attachments/assets/773c69bf-d176-4079-b8e5-68ef39aebe58" /> hover -->  <img width="200" height="200" alt="afbeelding" src="https://github.com/user-attachments/assets/bb572709-d827-4c20-bd98-677539e03be8" /> klik --> <img width="200" height="200" alt="afbeelding" src="https://github.com/user-attachments/assets/c298a1fa-de2f-498e-af44-c791cad9c68b" />
 
 
 
-lees-meer-knop 
-
-
+lees-meer-knop --> <img width="225" height="100" alt="afbeelding" src="https://github.com/user-attachments/assets/38f0a297-9eeb-41da-8f71-ee62376ef176" /> hover --> <img width="225" height="100" alt="afbeelding" src="https://github.com/user-attachments/assets/312ccbc0-b464-4097-b605-195ce9226881" />
 
 
 
@@ -42,7 +40,18 @@ lees-meer-knop
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+HTML
 
+De HTML heeft  een filter die bestaat nu uit een detail en summary, met daar in input elementen. 
+ 
+CSS
+ 
+het is mobile first. De media queries zijn genest in de de elementen  
+
+Javascript
+
+ Het gaat dan voornamelijk om de like button die werkt op meerdere artikelen
+ 
 ## Bronnen
 
 ## Licentie
